@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abrigo de Ottawa</title>
+</head>
+<body style="background-color: lightskyblue; font-family: sans-serif; text-align: center; padding-top: 50px;">
+
+    <h1> BEM-VINDO AO ABRIGO DE OTTAWA  🇨🇦</h1>
+    <p>Escolha o seu filhote de Golden Retriever clicando nos botões:</p>
+
+    <!-- Botões que mandam a opção para a nossa lógica -->
+    <button onclick="adotarPet(1)" style="padding: 10px 20px; font-size: 16px; margin: 5px; cursor: pointer; border-radius: 5px;">1 - Adotar Machinho</button>
+    <button onclick="adotarPet(2)" style="padding: 10px 20px; font-size: 16px; margin: 5px; cursor: pointer; border-radius: 5px;">2 - Adotar Fêmea</button>
+    <button onclick="adotarPet(3)" style="padding: 10px 20px; font-size: 16px; margin: 5px; cursor: pointer; border-radius: 5px;">3 - Adotar o Casal!</button>
+    <button onclick="adotarPet(4)" style="padding: 10px 20px; font-size: 16px; margin: 5px; cursor: pointer; border-radius: 5px;">4 - Adotar outra Raça!</button>
+    <!-- O Script é onde programamos a inteligência do site usando o Switch Case -->
+    <script>
+        function colocarNaTela(mensagem) {
+            alert(mensagem);
+        }
+
+        function adotarPet(escolha) {
+            // Olha a mesma lógica do seu código em C funcionando aqui!
+            switch(escolha) {
+                case 1:
+                    colocarNaTela("Parabéns! O Golden macho é seu. Prontos para correr na neve! ❄️");
+                    break;
+                case 2:
+                    colocarNaTela("Parabéns! A Golden fêmea é sua. Ela vai amar o inverno canadense! ☃️");
+                    break;
+                case 3:
+                    colocarNaTela("Sensacional! O casal de Goldens vai crescer junto com você em Ottawa! 🐕🐕");
+                    break;
+                case 4:
+                    colocarNaTela("Talvez você encontre outra raça no abrigo para viver com você em Ottawa!")
+                    break;
+                    default:
+                    colocarNaTela("[ERRO] Opção inválida!");
+            }
+        }
+    </script>
+
+</body>
+</html>
